@@ -20,7 +20,7 @@ spec:
             - containerPort: 8080
               protocol: TCP
           imagePullPolicy: IfNotPresent
-          image: 'quay.io/orgalmo/hello-world:v1'
+          image: 'quay.io/orgalmo/hello-world:v2'
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
   strategy:
@@ -29,3 +29,4 @@ spec:
       maxUnavailable: 25%
       maxSurge: 25%
   revisionHistoryLimit: 10
+    
